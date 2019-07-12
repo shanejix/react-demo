@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>TodoMVC-plus</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+	<!-- TodoApp -->
+	<section class="todoapp">
+		<!-- NewTodo -->
+		<header class="header">
+			<h1>todos</h1>
+			<input class="new-todo" placeholder="What needs to be done?" autofocus>
+		</header>
+		<!-- MainSection -->
+		<section class="main">
+			<!-- ToggleAll -->
+			<input id="toggle-all" class="toggle-all" type="checkbox">
+			<label for="toggle-all">Mark all as complete</label>
+			<!-- TodoItem -->
+			<ul class="todo-list">
+				<li data-id='1'>
+					<div class='view'>
+						<input type="checkbox" class="toggle">
+						<label>learn react </label>
+						<button class="destroy"></button>
+					</div>
+				</li>
+				<li data-id='2'>
+					<div class='view'>
+						<input type="checkbox" class="toggle">
+						<label>learn redux</label>
+						<button class="destroy"></button>
+					</div>
+				</li>
+				<li data-id='3'>
+					<div class='view'>
+						<input type="checkbox" class="toggle">
+						<label>learn ts</label>
+						<button class="destroy"></button>
+					</div>
+				</li>
+			</ul>
+			<!-- FilterItem -->
+			<footer class="footer">
+				<span class="todo-count"></span>
+				<ul class="filters">
+					<li>
+						<a href="#/" class="selected">All</a>
+					</li>
+					<li>
+						<a href="#/active">Active</a>
+					</li>
+					<li>
+						<a href="#/completed">Completed</a>
+					</li>
+				</ul>
+				<button class="clear-completed">Clear completed</button>
+			</footer>
+		</section>
+	</section>
+	<!-- Footer -->
+	<footer class="info">
+		<p>Power by react </p>
+		<p>Written by <a href="http://shanejix.github.com">shanejix</a></p>
+	</footer>
+
+
+</body>
+
+</html>
